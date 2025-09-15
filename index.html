@@ -12,6 +12,51 @@
       color: #333;
       text-align: center;
     }
+header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #f5f5f5;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    .phone-btn {
+      background: #28a745;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Add padding to avoid content hiding under header */
+    main {
+      padding: 100px 20px 20px; /* top padding matches header height */
+    }
+
+    footer {
+      margin-top: 40px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
 
     header {
       background: #0077b6;
@@ -55,6 +100,7 @@
   <header>
     <!-- Replace logo.png with your transparent logo file -->
     <img src="logo_transparent_highres (1).png" alt="Dr GVKR Logo">
+    <a class="phone-btn" href="tel:+1234567890">📞 Call Us</a>
     <h1>Dr GVKR's Neuro Care</h1>
     <p class="tagline">Excellence in Neurological Care & Patient Wellbeing</p>
   </header>
@@ -71,9 +117,20 @@
     <p>Phone: +91 7075027170</p>
     <p>Location: RajendraNagar, Mahabubnagar</p>
     <p>Location: Hasthinapuram, LB Nagar, Hyderabad</p>
+    <p>Scroll down to see the map. The header stays fixed on top 🚀</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum diam nec eros ultricies, a tincidunt nulla lacinia. Donec facilisis felis sit amet sem efficitur, vitae faucibus nisl dictum.</p>
+    <p>Keep scrolling...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat, nisl a euismod feugiat, metus mi viverra lacus, vitae sodales risus erat eu leo.</p>
+
   </main>
 
   <footer>
+    <iframe 
+      src="https://www.google.com/maps/dir//40+Houses,+Rajendra+Nagar,+Mahbubnagar,+Telangana+509001,+India/@16.7514094,77.9185423,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bca293ead7b0bdb:0xc5afabfa7684530b!2m2!1d78.0009441!2d16.7514258?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D"
+      allowfullscreen="" 
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
     © <span id="year"></span> Dr GVKR's Neuro Care. All rights reserved.
   </footer>
 
